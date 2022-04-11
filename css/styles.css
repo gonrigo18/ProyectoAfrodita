@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(16, 16, 16, .8),rgba(16, 16, 16, .8)), url(/assets/imagenfondo/afrodita-SPA.png);
+    background-size: cover;
+    grid-template-areas:
+    'info info info info'
+    'logo navbar navbar navbar'
+    'main main main main'
+    'main main main main'
+    'main main main main'
+    'main main main main'
+    'main main main main'
+    'main main main main'
+    'main main main main'
+    'footer footer footer footer';
+    gap: 10px;
+}
+/* SECTION INFO */
+
+.info{
+    display: grid;
+    grid-area: header;
+    height: 30px;
+    align-items: center;
+    color: white;
+    grid-template-areas:
+    "location1 contact icons";
+}
+.info .contact{
+    grid-template-areas: contact;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: start;
+}
+.info .location1 .fa-solid{
+    font-size: 1em;
+    margin-right: 15px;
+}
+.info .contact .fa-solid{
+    font-size: 1em;
+    margin-right: 15px;
+}
+.info .contact .fa-brands{
+    font-size: 1em;
+    margin-right: 15px;
+}
+
+.info .location1{
+    grid-template-areas: location1;
+    justify-content: start;
+    margin-left: 30px;
+}
+.info .location1 a{
+    font-size: 12px;
+    color: white;
+}
+.info .location1 a:hover{
+    color: red;
+}
+.info .contact{
+    grid-template-areas: contact;
+    justify-content: start;
+}
+.info .contact a{
+    font-size: 12px;
+    color: white;
+}
+.info .contact a:hover{
+    color: red;
+}
+.info .contact:hover{
+    color: red;
+}
+
+.info .icons{
+    grid-template-areas: icons;
+    font-size: 1em;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.info .icons .fa-brands{
+    margin-right: 15px;
+}
+.info .icons .fa-brands:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* SECTION NAVBAR */
+.navbar{
+    display: grid;
+    grid-area: navbar;
+    height: 90px;
+    align-items: center;
+    grid-template-areas:
+    'logo logo navbar navbar';
+}
+.navbar .logo{
+    display: grid;
+    grid-area: logo;
+    text-align: center;
+    grid-column: 2 / 4;
+    width: 240px;
+}
+.navbar .menu{
+    grid-column: 4 / 5;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .menu li{
+    list-style: none;
+}
+.navbar .menu a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.navbar .menu a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.menu-bar{
+    color: white;
+}
+#menu-bar{
+    display: none;
+}
+
+/* SECTION MAIN */
+
+.hero{
+    height: 250.5vh;
+    width: 100%;
+    display: grid;
+    grid-area: main;
+    justify-content: center;
+}
+
+.hero .info-content{
+    grid-column: 2 / 4;
+    grid-row: 4 / 5 ;
+    color: white;
+    text-align: center;
+}
+.hero .us{
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+    background-color: white;
+}
+.hero .services{
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
+    background-color: white;
+}
+.hero h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.hero h1{
+    font-size: 3em;
+}
+.hero .btn{
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    border-color: white;
+}
+.btn:hover{
+    color: black;
+    border-color: white;
+    background-color: white;
+}
+.hero .us{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 1200px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+}
+.hero .us .us_left{
+    display: block;
+    flex-direction: column;
+    width: 30%;
+    line-height: 35px;
+}
+.hero .us .us_right{
+    display: block;
+    flex-direction: column;
+    width: 50%;
+    text-align: end;
+}
+.hero .us .us_left .btn{
+    background-color: black;
+}
+.hero .us .us_left .btn:hover{
+    border-color: black;
+    background-color: white;
+    color: black;
+}
+.hero .services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 1200px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+}
+.hero .services .services_left{
+    display: block;
+    flex-direction: column;
+    width: 30%;
+    line-height: 35px;
+}
+.hero .services .services_right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    line-height: 25px;
+}
+.hero .services .services_right .text_suites{
+    display: block;
+    width: 50%;
+    font-size: 17px;
+    padding: 20px;
+}
+.hero .services .services_right .text_suites .fa-solid{
+    font-size: 30px;
+    color: brown;
+}
+.hero .services .services_right .decoration{
+    display: block;
+    width: 50%;
+    font-size: 17px;
+    padding: 20px;
+}
+.hero .services .services_right .decoration .fa-solid{
+    font-size: 30px;
+    color: brown;
+}
+.hero .services .services_right .fooddrink{
+    display: block;
+    width: 50%;
+    font-size: 17px;
+    padding: 20px;
+}
+.hero .services .services_right .fooddrink .fa-solid{
+    font-size: 30px;
+    color: brown;
+}
+.hero .services .services_right .wifi{
+    display: block;
+    width: 50%;
+    font-size: 17px;
+    padding: 20px;
+}
+.hero .services .services_right .wifi .fa-solid{
+    font-size: 30px;
+    color: brown;
+}
+.hero .waze{
+    display: grid;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2 ;
+    justify-content: center;
+    align-items: center;
+}
+.hero .form_contact{
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3 ;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+form{
+    text-align: center;
+}
+.hero .allsuites{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    padding: 20px;
+    text-align: center;
+}
+.hero .allsuites .text_suites{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.hero .description{
+    width: 100%;
+    padding: 20px;
+    line-height: 50px;
+    color: white;
+}
+.hero .text_turns{
+    width: 100%;
+    padding: 20px;
+    line-height: 50px;
+    color: white;
+}
+.hero .text_rates{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    line-height: 50px;
+    color: white;
+}
+.hero .ushero{
+    margin-top: 30px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+.hero .ushero .ushero_left{
+    margin-top: 30px;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+.hero .ushero .ushero_right{
+    margin-top: 30px;
+    color: white;
+    padding: 20px;
+    line-height: 40px;
+    align-items: center;
+    width: 100%;
+}
+
+/* SECTION FOOTER */
+
+.footer{
+    display: grid;
+    grid-area: footer;
+    height: 30px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    grid-template-areas:
+    'copy location social-network social-network';
+}
+.footer .copy{
+    grid-template-areas: copy;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+}
+
+.footer .copy .fa-solid{
+    font-size: 1em;
+    margin-right: 15px;
+}
+.footer .location .fa-solid{
+    font-size: 1em;
+    margin-right: 15px;
+}
+
+.footer .location{
+    grid-template-areas: location;
+    text-align: center;
+}
+.footer .location a{
+    font-size: 12px;
+    color: white;
+}
+.footer .location a:hover{
+    color: red;
+}
+.footer .location:hover{
+    color: red;
+}
+
+.footer .social-network{
+    grid-template-areas: social-network;
+    font-size: 1em;
+    grid-column: 4 / 5 ;
+    text-align: center;
+}
+
+.footer .social-network .fa-brands{
+    margin-right: 15px;
+}
+footer .social-network .fa-brands:hover{
+    color: red;
+    cursor: pointer;
+}
