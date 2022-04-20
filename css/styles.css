@@ -419,3 +419,12 @@ footer .social-network .fa-brands:hover{
     color: red;
     cursor: pointer;
 }
+
+.carrosel{
+    height: 150.5vh;
+    width: 100%;
+    display: grid;
+    grid-area: main;
+    justify-content: center;
+    align-items: center;
+}
