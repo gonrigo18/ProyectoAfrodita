@@ -108,7 +108,7 @@ body{
     display: grid;
     grid-area: logo;
     text-align: center;
-    grid-column: 2 / 4;
+    grid-column: 3 / 4;
     width: 20%;
     padding-left: 100px;
 }
@@ -248,46 +248,62 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
-    line-height: 25px;
+    line-height: 20px;
 }
-.hero .services .services_right .text_suites{
+.hero .services .text_suites{
     display: block;
     width: 50%;
-    font-size: 17px;
     padding: 20px;
 }
+.hero .services .services_right .text_suites h4{
+    font-size: 16px;
+}
+.hero .services .services_right .text_suites h5{
+    font-size: 15px;
+}
+.hero .services .services_right .decoration h4{
+    font-size: 16px;
+}
+.hero .services .services_right .decoration h5{
+    font-size: 15px;
+}
+.hero .services .services_right .fooddrink h4{
+    font-size: 16px;
+}
+.hero .services .services_right .wifi h5{
+    font-size: 15px;
+}
+.hero .services .services_right .wifi h4{
+    font-size: 16px;
+}
+.hero .services .services_right .fooddrink h5{
+    font-size: 15px;
+}
 .hero .services .services_right .text_suites .fa-solid{
-    font-size: 30px;
     color: brown;
 }
 .hero .services .services_right .decoration{
     display: block;
     width: 50%;
-    font-size: 17px;
     padding: 20px;
 }
 .hero .services .services_right .decoration .fa-solid{
-    font-size: 30px;
     color: brown;
 }
 .hero .services .services_right .fooddrink{
     display: block;
     width: 50%;
-    font-size: 17px;
     padding: 20px;
 }
 .hero .services .services_right .fooddrink .fa-solid{
-    font-size: 30px;
     color: brown;
 }
 .hero .services .services_right .wifi{
     display: block;
     width: 50%;
-    font-size: 17px;
     padding: 20px;
 }
 .hero .services .services_right .wifi .fa-solid{
-    font-size: 30px;
     color: brown;
 }
 .hero .waze{
