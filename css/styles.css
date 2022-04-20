@@ -109,7 +109,8 @@ body{
     grid-area: logo;
     text-align: center;
     grid-column: 2 / 4;
-    width: 240px;
+    width: 20%;
+    padding-left: 100px;
 }
 .navbar .menu{
     grid-column: 4 / 5;
@@ -123,6 +124,7 @@ body{
     text-decoration: none;
     color: white;
     cursor: pointer;
+    padding: 10px;
 }
 .navbar .menu a:hover{
     color: red;
