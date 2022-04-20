@@ -11,13 +11,7 @@ body{
     background-size: cover;
     grid-template-areas:
     'info info info info'
-    'logo navbar navbar navbar'
-    'main main main main'
-    'main main main main'
-    'main main main main'
-    'main main main main'
-    'main main main main'
-    'main main main main'
+    'logo logo menu menu'
     'main main main main'
     'footer footer footer footer';
     gap: 10px;
@@ -31,7 +25,7 @@ body{
     align-items: center;
     color: white;
     grid-template-areas:
-    "location1 contact icons";
+    "location1 contact icons"
 }
 .info .contact{
     grid-template-areas: contact;
@@ -97,44 +91,17 @@ body{
 
 /* SECTION NAVBAR */
 .navbar{
-    display: grid;
-    grid-area: navbar;
-    height: 90px;
-    align-items: center;
-    grid-template-areas:
-    'logo logo navbar navbar';
-}
-.navbar .logo{
-    display: grid;
-    grid-area: logo;
-    text-align: center;
-    grid-column: 3 / 4;
-    width: 20%;
-    padding-left: 100px;
-}
-.navbar .menu{
-    grid-column: 4 / 5;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-.navbar .menu li{
-    list-style: none;
+.navbar .navbar-brand{
+    display: flex;
+    justify-content: center;
 }
-.navbar .menu a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-}
-.navbar .menu a:hover{
-    color: red;
-    text-decoration: underline;
-}
-.menu-bar{
-    color: white;
-}
-#menu-bar{
-    display: none;
+.navbar .navbar-nav{
+    display: flex;
+    justify-content: end;
 }
 
 /* SECTION MAIN */
