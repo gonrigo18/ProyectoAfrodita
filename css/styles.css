@@ -274,15 +274,12 @@ body {
       align-items: center;
       width: 100%; }
 
-.carrosel {
-  margin-top: 90px;
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-area: main; }
-  .carrosel .carousel .carousel-inner img {
-    justify-content: center;
-    width: 50%; }
+.carousel-caption {
+  background-color: black; }
+  .carousel-caption h5 {
+    color: white; }
+  .carousel-caption p {
+    color: white; }
 
 * {
   margin: 0;

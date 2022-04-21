@@ -292,21 +292,12 @@ body {
         }
     }
 }
-.carrosel{
-    margin-top: 90px;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-area: main;
-
-    .carousel{
-
-        .carousel-inner{
-            
-            img{
-                justify-content: center;
-                width: 50%;
-            }
-        }
+.carousel-caption{
+    background-color: black;
+    h5{
+        color: white;
+    }
+    p{
+        color: white;
     }
 }
