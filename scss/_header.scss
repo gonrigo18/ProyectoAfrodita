@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.info{
+    display: grid;
+    grid-area: header;
+    height: 30px;
+    align-items: center;
+    color: white;
+    grid-template-areas:
+    "location1 contact icons";
+
+    .contact{
+        grid-template-areas: contact;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    .location1 {
+        grid-template-areas: location1;
+        justify-content: start;
+        margin-left: 30px;
+
+        .fa-solid{
+        font-size: 1em;
+        margin-right: 15px;
+        }
+
+        a{
+            font-size: 12px;
+            color: white;
+
+            &:hover{
+                color: red;
+            }
+
+        }
+    }
+    .contact{
+
+        grid-template-areas: contact;
+        justify-content: start;
+
+        .fa-solid{
+            font-size: 1em;
+            margin-right: 15px;
+        }
+        .fa-brands{
+            font-size: 1em;
+            margin-right: 15px;
+        }
+        a{
+            font-size: 12px;
+            color: white;
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+    .icons{
+        grid-template-areas: icons;
+        font-size: 1em;
+        text-align: end;
+        margin-right: 30px;
+
+        .fa-brands{
+            margin-right: 15px;
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+/* SECTION NAVBAR */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .navbar-brand{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-nav{
+        display: flex;
+        justify-content: end;
+    }
+
+    .collapse {
+        .navbar-nav {
+            li {
+                a{
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

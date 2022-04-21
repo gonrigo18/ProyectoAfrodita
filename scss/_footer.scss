@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    display: grid;
+    grid-area: footer;
+    height: 30px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    grid-template-areas:
+    'copy location social-network social-network';
+
+    .copy{
+        grid-template-areas: copy;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        align-items: center;
+
+        .fa-solid{
+            font-size: 1em;
+            margin-right: 15px;
+        }
+    }
+    .location{
+
+        grid-template-areas: location;
+        text-align: center;
+
+        &:hover{
+            color: red;
+        }
+
+        .fa-solid{
+            font-size: 1em;
+            margin-right: 15px;
+        }
+
+        a{
+            font-size: 12px;
+            color: white;
+
+            &:hover{
+                color: red;
+            }
+        }
+
+    }
+
+    .social-network{
+        grid-template-areas: social-network;
+        font-size: 1em;
+        grid-column: 4 / 5 ;
+        text-align: center;
+
+        .fa-brands{
+            margin-right: 15px;
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+
+}

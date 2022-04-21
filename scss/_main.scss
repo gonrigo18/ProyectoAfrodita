@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../assets/imagenfondo/afrodita-SPA.png);
+    background-size: cover;
+    grid-template-areas: 'info info info info'
+    'logo logo menu menu'
+    'main main main main'
+    'footer footer footer footer';
+    gap: 10px; }
+
+.hero{
+    height: 250.5vh;
+    width: 100%;
+    display: grid;
+    grid-area: main;
+    justify-content: center;
+
+    .info-content{
+        grid-column: 2 / 4;
+        grid-row: 4 / 5 ;
+        color: white;
+        text-align: center;
+    }
+
+    .us{
+        grid-column: 2 / 4;
+        grid-row: 5 / 6;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 1200px;
+        height: 400px;
+        align-items: center;
+        text-align: center;
+
+        .us_left{
+            display: block;
+            flex-direction: column;
+            width: 30%;
+            line-height: 35px;
+
+            .btn{
+                background-color: black;
+
+                &:hover{
+                    border-color: black;
+                background-color: white;
+                color: black;
+                }
+            }
+        }
+
+        .us_right{
+            display: block;
+            flex-direction: column;
+            width: 50%;
+            text-align: end;
+        }
+    }
+
+    .services{
+        grid-column: 2 / 4;
+        grid-row: 6 / 7;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 1200px;
+        height: 400px;
+        align-items: center;
+        text-align: center;
+
+        .services_left{
+            display: block;
+            flex-direction: column;
+            width: 30%;
+            line-height: 35px;
+        }
+
+        .services_right{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 50%;
+            line-height: 20px;
+
+            .text_suites{
+
+                h5{
+                    font-size: 15px;
+                }
+                h4{
+                    font-size: 16px;
+                }
+                .fa-solid{
+                    color: brown;
+                }
+            }
+
+            .decoration{
+
+                display: block;
+                width: 50%;
+                padding: 20px;
+
+                h4{
+                    font-size: 16px;
+                }
+
+                h5{
+                    font-size: 15px;
+                }
+
+                .fa-solid{
+                    color: brown;
+                }
+            }
+
+            .fooddrink{
+
+                display: block;
+                width: 50%;
+                padding: 20px;
+
+                h4{
+                    font-size: 16px;
+                }
+
+                h5{
+                    font-size: 15px;
+                }
+
+                .fa-solid{
+                    color: brown;
+                }
+            }
+
+            .wifi{
+
+                display: block;
+                width: 50%;
+                padding: 20px;
+
+                h4{
+                    font-size: 16px;
+                }
+
+                h5{
+                    font-size: 15px;
+                }
+
+                .fa-solid{
+                    color: brown;
+                }
+            }
+        }
+
+        .text_suites{
+            display: block;
+            width: 50%;
+            padding: 20px;
+        }
+    }
+
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    .btn{
+        display: inline-block;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 2px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        line-height: 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: white;
+        border-color: white;
+
+        &:hover{
+
+        color: black;
+        border-color: white;
+        background-color: white;
+        }
+    }
+
+    .waze{
+        display: grid;
+        grid-column: 1 / 5;
+        grid-row: 1 / 2 ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form_contact{
+        display: grid;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3 ;
+        justify-content: center;
+        align-items: flex-start;
+        color: white;
+    }
+    form{
+        text-align: center;
+    }
+
+    .allsuites{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: max-content;
+        padding: 20px;
+        text-align: center;
+
+        .text_suites{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .description{
+        width: 100%;
+        padding: 20px;
+        line-height: 50px;
+        color: white;
+    }
+
+    .text_turns{
+        width: 100%;
+        padding: 20px;
+        line-height: 50px;
+        color: white;
+    }
+
+    .text_rates{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        line-height: 50px;
+        color: white;
+    }
+
+    .ushero{
+        margin-top: 30px;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+
+        .ushero_left{
+            margin-top: 30px;
+            color: white;
+            padding: 20px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .ushero_right{
+            margin-top: 30px;
+            color: white;
+            padding: 20px;
+            line-height: 40px;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    .carrosel{
+        height: 150.5vh;
+        width: 100%;
+        display: grid;
+        grid-area: main;
+        justify-content: center;
+        align-items: center;
+    }
+}
