@@ -77,10 +77,7 @@ body {
   overflow-x: hidden;
   background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../assets/imagenfondo/afrodita-SPA.png);
   background-size: cover;
-  grid-template-areas: 'info info info info'
- 'logo logo menu menu'
- 'main main main main'
- 'footer footer footer footer';
+  grid-template-areas: 'info info info info' 'logo logo menu menu' 'main main main main' 'footer footer footer footer';
   gap: 10px; }
 
 .hero {
@@ -276,13 +273,16 @@ body {
       line-height: 40px;
       align-items: center;
       width: 100%; }
-  .hero .carrosel {
-    height: 150.5vh;
-    width: 100%;
-    display: grid;
-    grid-area: main;
+
+.carrosel {
+  margin-top: 90px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-area: main; }
+  .carrosel .carousel .carousel-inner img {
     justify-content: center;
-    align-items: center; }
+    width: 50%; }
 
 * {
   margin: 0;

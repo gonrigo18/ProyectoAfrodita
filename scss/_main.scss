@@ -291,13 +291,22 @@ body {
             width: 100%;
         }
     }
+}
+.carrosel{
+    margin-top: 90px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-area: main;
 
-    .carrosel{
-        height: 150.5vh;
-        width: 100%;
-        display: grid;
-        grid-area: main;
-        justify-content: center;
-        align-items: center;
+    .carousel{
+
+        .carousel-inner{
+            
+            img{
+                justify-content: center;
+                width: 50%;
+            }
+        }
     }
 }
