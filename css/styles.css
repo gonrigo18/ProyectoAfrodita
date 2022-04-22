@@ -251,34 +251,9 @@ body {
     padding: 20px;
     line-height: 50px;
     color: white; }
-  .hero .ushero {
-    margin-top: 30px;
-    padding: 10px;
-    align-items: center;
-    text-align: center; }
-    .hero .ushero .ushero_left {
-      margin-top: 30px;
-      color: white;
-      padding: 20px;
-      align-items: center;
-      width: 100%; }
-    .hero .ushero .ushero_right {
-      margin-top: 30px;
-      color: white;
-      padding: 20px;
-      line-height: 40px;
-      align-items: center;
-      width: 100%; }
-
-.carousel-caption {
-  background-color: black; }
-  .carousel-caption h5 {
-    color: white; }
-  .carousel-caption p {
-    color: white; }
 
 .container {
-  height: 230.5vh; }
+  height: 265.5vh; }
   .container .description {
     background-color: #212020;
     display: flex;
@@ -332,11 +307,27 @@ body {
       border: solid 1px white; }
   .container .us_suites {
     color: white;
+    flex-direction: column;
+    justify-content: center; }
+    .container .us_suites h1 {
+      text-align: center;
+      margin-left: 35%;
+      margin-right: 35%;
+      padding: 10px;
+      border: white 2px solid; }
+  .container .cards {
+    margin-top: 50px; }
+  .container .ushero h2 {
+    color: white; }
+  .container .ushero h4 {
+    color: white; }
+  .container .center {
     text-align: center;
-    margin-left: 35%;
-    margin-right: 35%;
-    padding: 10px;
-    border: white 2px solid; }
+    justify-content: center; }
+  .container .carousel {
+    justify-content: center;
+    text-align: center;
+    width: 60%; }
 
 * {
   margin: 0;

@@ -261,41 +261,9 @@ body {
         color: white;
     }
 
-    .ushero{
-        margin-top: 30px;
-        padding: 10px;
-        align-items: center;
-        text-align: center;
-
-        .ushero_left{
-            margin-top: 30px;
-            color: white;
-            padding: 20px;
-            align-items: center;
-            width: 100%;
-        }
-
-        .ushero_right{
-            margin-top: 30px;
-            color: white;
-            padding: 20px;
-            line-height: 40px;
-            align-items: center;
-            width: 100%;
-        }
-    }
-}
-.carousel-caption{
-    background-color: black;
-    h5{
-        color: white;
-    }
-    p{
-        color: white;
-    }
 }
 .container{
-        height: 230.5vh;
+        height: 265.5vh;
     .description{
         background-color: rgb(33, 32, 32);
         display: flex;
@@ -359,10 +327,36 @@ body {
     }
     .us_suites{
         color: white;
+        flex-direction: column;
+        justify-content: center;
+
+        h1{
+            text-align: center;
+            margin-left: 35%;
+            margin-right: 35%;
+            padding: 10px;
+            border: white 2px solid;
+        }
+
+    }
+    .cards{
+        margin-top: 50px;
+    }
+    .ushero{
+        h2{
+            color: white;
+        }
+        h4{
+            color: white;
+        }
+    }
+    .center{
         text-align: center;
-        margin-left: 35%;
-        margin-right: 35%;
-        padding: 10px;
-        border: white 2px solid;
+        justify-content: center;
+    }
+    .carousel{
+    justify-content: center;
+    text-align: center;
+    width: 60%;
     }
 }
