@@ -238,16 +238,12 @@ body {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap; }
-  .hero .description {
-    width: 100%;
-    padding: 20px;
-    line-height: 50px;
-    color: white; }
   .hero .text_turns {
     width: 100%;
     padding: 20px;
     line-height: 50px;
-    color: white; }
+    color: white;
+    background-color: white; }
   .hero .text_rates {
     display: flex;
     flex-direction: column;
@@ -280,6 +276,32 @@ body {
     color: white; }
   .carousel-caption p {
     color: white; }
+
+.container .description {
+  background-color: #212020;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: max-content;
+  height: 300px;
+  align-items: center;
+  text-align: center;
+  border: solid 1px red; }
+  .container .description h4 {
+    color: white; }
+
+.container .description_left {
+  display: block;
+  flex-direction: column;
+  width: 60%;
+  line-height: 35px; }
+
+.container .descripcion_right {
+  display: block;
+  flex-direction: column;
+  width: 40%;
+  text-align: center; }
 
 * {
   margin: 0;
