@@ -307,8 +307,38 @@ body {
         text-align: center;
         border: solid 1px red;
 
+        strong{
+            color: red;
+        }
         h4{
             color: white;
+        }
+        .btn{
+            display: inline-block;
+            font-weight: normal;
+            text-align: center;
+            vertical-align: middle;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 2px solid transparent;
+            white-space: nowrap;
+            padding: 6px 12px;
+            line-height: 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: white;
+            border-color: white;
+
+            &:hover{
+            color: black;
+            border-color: white;
+            background-color: white;
+            }
         }
     }
     .description_left{
@@ -322,5 +352,8 @@ body {
         flex-direction: column;
         width: 40%;
         text-align: center;
+        img{
+            border: solid 1px white;
+        }
     }
 }
