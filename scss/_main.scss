@@ -244,22 +244,6 @@ body {
             flex-wrap: nowrap;
         }
     }
-    .text_turns{
-        width: 100%;
-        padding: 20px;
-        line-height: 50px;
-        color: white;
-        background-color: white;
-    }
-
-    .text_rates{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 20px;
-        line-height: 50px;
-        color: white;
-    }
 
 }
 .container{
@@ -348,6 +332,7 @@ body {
         }
         h4{
             color: white;
+            line-height: 40px;
         }
     }
     .center{
@@ -358,5 +343,35 @@ body {
     justify-content: center;
     text-align: center;
     width: 60%;
+    border: solid 1px white;
+    }
+    .card-body{
+        h5{
+            text-align: center;
+        }
+        .text_block{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            .left-block{
+                display: block;
+            }
+            .right-block{
+                display: block;
+            }
+            .card-text{
+                text-decoration: underline;
+            }
+        }
+    }
+    .text_turns{
+        width: 100%;
+        padding: 20px;
+        line-height: 50px;
+        color: white;
+        strong{
+            text-decoration: underline;
+        }
     }
 }

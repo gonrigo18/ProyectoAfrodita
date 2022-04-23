@@ -238,19 +238,6 @@ body {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap; }
-  .hero .text_turns {
-    width: 100%;
-    padding: 20px;
-    line-height: 50px;
-    color: white;
-    background-color: white; }
-  .hero .text_rates {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 20px;
-    line-height: 50px;
-    color: white; }
 
 .container {
   height: 265.5vh; }
@@ -320,14 +307,36 @@ body {
   .container .ushero h2 {
     color: white; }
   .container .ushero h4 {
-    color: white; }
+    color: white;
+    line-height: 40px; }
   .container .center {
     text-align: center;
     justify-content: center; }
   .container .carousel {
     justify-content: center;
     text-align: center;
-    width: 60%; }
+    width: 60%;
+    border: solid 1px white; }
+  .container .card-body h5 {
+    text-align: center; }
+  .container .card-body .text_block {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center; }
+    .container .card-body .text_block .left-block {
+      display: block; }
+    .container .card-body .text_block .right-block {
+      display: block; }
+    .container .card-body .text_block .card-text {
+      text-decoration: underline; }
+  .container .text_turns {
+    width: 100%;
+    padding: 20px;
+    line-height: 50px;
+    color: white; }
+    .container .text_turns strong {
+      text-decoration: underline; }
 
 * {
   margin: 0;
