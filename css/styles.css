@@ -80,167 +80,168 @@ body {
   grid-template-areas: 'info info info info' 'logo logo menu menu' 'main main main main' 'footer footer footer footer';
   gap: 10px; }
 
-.hero {
-  height: 250.5vh;
-  width: 100%;
+.hero h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300; }
+
+.hero h1 {
+  font-size: 3em; }
+
+.hero .waze {
   display: grid;
-  grid-area: main;
-  justify-content: center; }
-  .hero .info-content {
-    grid-column: 2 / 4;
-    grid-row: 4 / 5;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  justify-content: center;
+  align-items: center; }
+
+.hero .form_contact {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  justify-content: center;
+  align-items: flex-start;
+  color: white; }
+
+.hero form {
+  text-align: center; }
+
+.hero .allsuites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: max-content;
+  padding: 20px;
+  text-align: center; }
+  .hero .allsuites .text_suites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+
+.container {
+  position: relative;
+  height: 265.5vh; }
+  .container .info-content {
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
     color: white;
-    text-align: center; }
-  .hero .us {
-    grid-column: 2 / 4;
-    grid-row: 5 / 6;
+    text-align: center;
+    align-content: center;
+    justify-content: end; }
+    .container .info-content .btn {
+      display: flex;
+      font-weight: normal;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 2px solid transparent;
+      white-space: nowrap;
+      padding: 6px 12px;
+      line-height: 20px;
+      font-size: 14px;
+      border-radius: 4px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      color: white;
+      border-color: white;
+      text-align: center;
+      width: max-content;
+      justify-content: center; }
+      .container .info-content .btn:hover {
+        color: black;
+        border-color: white;
+        background-color: white; }
+  .container .us {
     background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    width: 1200px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     align-items: center;
     text-align: center; }
-    .hero .us .us_left {
+    .container .us .us_left {
       display: block;
       flex-direction: column;
-      width: 30%;
-      line-height: 35px; }
-      .hero .us .us_left .btn {
-        background-color: black; }
-        .hero .us .us_left .btn:hover {
+      width: 100%;
+      line-height: 35px;
+      align-content: center; }
+      .container .us .us_left .btn {
+        background-color: black;
+        color: white; }
+        .container .us .us_left .btn:hover {
           border-color: black;
           background-color: white;
           color: black; }
-    .hero .us .us_right {
+    .container .us .us_right {
       display: block;
       flex-direction: column;
-      width: 50%;
-      text-align: end; }
-  .hero .services {
-    grid-column: 2 / 4;
-    grid-row: 6 / 7;
+      width: 80%; }
+  .container .services {
     background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    width: 1200px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     align-items: center;
     text-align: center; }
-    .hero .services .services_left {
+    .container .services .services_left {
       display: block;
       flex-direction: column;
-      width: 30%;
+      width: 40%;
       line-height: 35px; }
-    .hero .services .services_right {
+    .container .services .services_right {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      width: 50%;
-      line-height: 20px; }
-      .hero .services .services_right .text_suites h5 {
+      width: 50%; }
+      .container .services .services_right .text_suites h5 {
         font-size: 15px; }
-      .hero .services .services_right .text_suites h4 {
+      .container .services .services_right .text_suites h4 {
         font-size: 16px; }
-      .hero .services .services_right .text_suites .fa-solid {
+      .container .services .services_right .text_suites .fa-solid {
         color: brown; }
-      .hero .services .services_right .decoration {
+      .container .services .services_right .decoration {
         display: block;
         width: 50%;
         padding: 20px; }
-        .hero .services .services_right .decoration h4 {
+        .container .services .services_right .decoration h4 {
           font-size: 16px; }
-        .hero .services .services_right .decoration h5 {
+        .container .services .services_right .decoration h5 {
           font-size: 15px; }
-        .hero .services .services_right .decoration .fa-solid {
+        .container .services .services_right .decoration .fa-solid {
           color: brown; }
-      .hero .services .services_right .fooddrink {
+      .container .services .services_right .fooddrink {
         display: block;
         width: 50%;
         padding: 20px; }
-        .hero .services .services_right .fooddrink h4 {
+        .container .services .services_right .fooddrink h4 {
           font-size: 16px; }
-        .hero .services .services_right .fooddrink h5 {
+        .container .services .services_right .fooddrink h5 {
           font-size: 15px; }
-        .hero .services .services_right .fooddrink .fa-solid {
+        .container .services .services_right .fooddrink .fa-solid {
           color: brown; }
-      .hero .services .services_right .wifi {
+      .container .services .services_right .wifi {
         display: block;
         width: 50%;
         padding: 20px; }
-        .hero .services .services_right .wifi h4 {
+        .container .services .services_right .wifi h4 {
           font-size: 16px; }
-        .hero .services .services_right .wifi h5 {
+        .container .services .services_right .wifi h5 {
           font-size: 15px; }
-        .hero .services .services_right .wifi .fa-solid {
+        .container .services .services_right .wifi .fa-solid {
           color: brown; }
-    .hero .services .text_suites {
+    .container .services .text_suites {
       display: block;
       width: 50%;
       padding: 20px; }
-  .hero h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    font-weight: 300; }
-  .hero h1 {
-    font-size: 3em; }
-  .hero .btn {
-    display: inline-block;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
-    border: 2px solid transparent;
-    white-space: nowrap;
-    padding: 6px 12px;
-    line-height: 20px;
-    font-size: 14px;
-    border-radius: 4px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color: white;
-    border-color: white; }
-    .hero .btn:hover {
-      color: black;
-      border-color: white;
-      background-color: white; }
-  .hero .waze {
-    display: grid;
-    grid-column: 1 / 5;
-    grid-row: 1 / 2;
-    justify-content: center;
-    align-items: center; }
-  .hero .form_contact {
-    display: grid;
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-    justify-content: center;
-    align-items: flex-start;
-    color: white; }
-  .hero form {
-    text-align: center; }
-  .hero .allsuites {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: max-content;
-    padding: 20px;
-    text-align: center; }
-    .hero .allsuites .text_suites {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap; }
-
-.container {
-  height: 265.5vh; }
   .container .description {
     background-color: #212020;
     display: flex;
@@ -350,6 +351,7 @@ body {
   align-items: center;
   background-color: black;
   color: white;
+  position: relative;
   grid-template-areas: 'copy location social-network social-network'; }
   .footer .copy {
     grid-template-areas: copy;
