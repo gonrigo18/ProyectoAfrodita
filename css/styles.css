@@ -77,50 +77,11 @@ body {
   overflow-x: hidden;
   background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../assets/imagenfondo/afrodita-SPA.png);
   background-size: cover;
-  grid-template-areas: 'info info info info' 'logo logo menu menu' 'main main main main' 'footer footer footer footer';
-  gap: 10px; }
-
-.hero h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
-  font-weight: 300; }
-
-.hero h1 {
-  font-size: 3em; }
-
-.hero .waze {
-  display: grid;
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
-  justify-content: center;
-  align-items: center; }
-
-.hero .form_contact {
-  display: grid;
-  grid-column: 1 / 4;
-  grid-row: 2 / 3;
-  justify-content: center;
-  align-items: flex-start;
-  color: white; }
-
-.hero form {
-  text-align: center; }
-
-.hero .allsuites {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: max-content;
-  padding: 20px;
-  text-align: center; }
-  .hero .allsuites .text_suites {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap; }
+  gap: 10px;
+  position: relative; }
 
 .container {
-  position: relative;
-  height: 265.5vh; }
+  position: relative; }
   .container .info-content {
     display: flex;
     flex-direction: column;
@@ -128,9 +89,9 @@ body {
     color: white;
     text-align: center;
     align-content: center;
-    justify-content: end; }
+    justify-content: center;
+    align-items: center; }
     .container .info-content .btn {
-      display: flex;
       font-weight: normal;
       vertical-align: middle;
       touch-action: manipulation;
@@ -148,9 +109,8 @@ body {
       user-select: none;
       color: white;
       border-color: white;
-      text-align: center;
       width: max-content;
-      justify-content: center; }
+      text-align: center; }
       .container .info-content .btn:hover {
         color: black;
         border-color: white;
@@ -295,14 +255,13 @@ body {
       border: solid 1px white; }
   .container .us_suites {
     color: white;
-    flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    border: white 2px solid; }
     .container .us_suites h1 {
       text-align: center;
-      margin-left: 35%;
-      margin-right: 35%;
-      padding: 10px;
-      border: white 2px solid; }
+      margin-left: 25%;
+      margin-right: 25%;
+      padding: 10px; }
   .container .cards {
     margin-top: 50px; }
   .container .ushero h2 {
@@ -338,49 +297,63 @@ body {
     color: white; }
     .container .text_turns strong {
       text-decoration: underline; }
+  .container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300; }
+  .container h1 {
+    font-size: 3em; }
+  .container .waze {
+    display: grid;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    justify-content: center;
+    align-items: center; }
+  .container .form_contact {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-content: center;
+    align-items: flex-start;
+    color: white; }
+  .container form {
+    text-align: center; }
+  .container .allsuites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    padding: 20px;
+    text-align: center; }
+    .container .allsuites .text_suites {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-.footer {
-  display: grid;
-  grid-area: footer;
-  height: 30px;
-  align-items: center;
-  background-color: black;
-  color: white;
-  position: relative;
-  grid-template-areas: 'copy location social-network social-network'; }
-  .footer .copy {
-    grid-template-areas: copy;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    align-items: center; }
-    .footer .copy .fa-solid {
-      font-size: 1em;
-      margin-right: 15px; }
-  .footer .location {
-    grid-template-areas: location;
-    text-align: center; }
-    .footer .location:hover {
-      color: red; }
-    .footer .location .fa-solid {
-      font-size: 1em;
-      margin-right: 15px; }
-    .footer .location a {
-      font-size: 12px;
-      color: white; }
-      .footer .location a:hover {
-        color: red; }
-  .footer .social-network {
-    grid-template-areas: social-network;
-    font-size: 1em;
-    grid-column: 4 / 5;
-    text-align: center; }
-    .footer .social-network .fa-brands {
-      margin-right: 15px; }
-      .footer .social-network .fa-brands:hover {
-        color: red; }
+.footer-style {
+  padding-top: 50px;
+  background-color: #5c000e;
+  margin-top: 50px; }
+
+footer {
+  color: white; }
+
+footer h3 {
+  margin-bottom: 30px;
+  font-weight: 800; }
+
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #5c000e; }
+
+footer .footer-col {
+  margin-bottom: 50px; }
+
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140; }
