@@ -53,16 +53,17 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-evenly;
         width: 100%;
         height: 100%;
         align-items: center;
         text-align: center;
+        justify-content: center;
+        align-content: center;
         .us_left{
             display: block;
-            flex-direction: column;
-            width: 100%;
-            line-height: 35px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            line-height: 10px;
             align-content: center;
             .btn{
                 background-color: black;
@@ -75,9 +76,9 @@ body {
             }
         }
         .us_right{
-            display: block;
-            flex-direction: column;
-            width: 80%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
     }
     .services{
@@ -85,7 +86,7 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 100%;
         height: 100%;
         align-items: center;
@@ -94,16 +95,14 @@ body {
 
         .services_left{
             display: block;
-            flex-direction: column;
-            width: 30%;
+            flex-direction: row;
+            flex-wrap: wrap;
             line-height: 10px;
-    
         }
         .services_right{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 60%;
             .text_suites{
                 h5{
                     font-size: 15px;
@@ -213,16 +212,17 @@ body {
     .description_left{
         display: block;
         flex-direction: column;
-        width: 60%;
+        width: 50%;
         line-height: 35px;
     }
     .descripcion_right{
         display: block;
         flex-direction: column;
-        width: 40%;
+        width: 50%;
         text-align: center;
         img{
             border: solid 1px white;
+            width: 50%;
         }
     }
     .us_suites{
