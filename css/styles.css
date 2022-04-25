@@ -11,6 +11,10 @@
   align-items: center;
   color: white;
   grid-template-areas: "location1 contact icons"; }
+  .info .color a {
+    color: white; }
+    .info .color a:hover {
+      color: red; }
   .info .contact {
     grid-template-areas: contact;
     display: flex;
@@ -342,18 +346,18 @@ body {
 
 footer {
   color: white; }
-
-footer h3 {
-  margin-bottom: 30px;
-  font-weight: 800; }
-
-footer .footer-above {
-  padding-top: 50px;
-  background-color: #5c000e; }
-
-footer .footer-col {
-  margin-bottom: 50px; }
-
-footer .footer-below {
-  padding: 25px 0;
-  background-color: #233140; }
+  footer h3 {
+    margin-bottom: 30px;
+    font-weight: 800; }
+  footer .footer-above {
+    padding-top: 50px;
+    background-color: #5c000e; }
+  footer .footer-col {
+    margin-bottom: 50px; }
+  footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140; }
+  footer .color a {
+    color: white; }
+    footer .color a:hover {
+      color: red; }

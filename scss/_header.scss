@@ -12,6 +12,15 @@
     grid-template-areas:
     "location1 contact icons";
 
+    .color{
+        a{
+        color: white;
+        &:hover{
+            color:red;
+        }
+        }
+    }
+
     .contact{
         grid-template-areas: contact;
         display: flex;

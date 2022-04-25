@@ -10,19 +10,27 @@
 }
 footer {
   color: white;
-}
-footer h3 {
-  margin-bottom: 30px;
+  h3{
+    margin-bottom: 30px;
     font-weight: 800;
-}
-footer .footer-above {
-  padding-top: 50px;
-  background-color: #5c000e;
-}
-footer .footer-col {
-  margin-bottom: 50px;
-}
-footer .footer-below {
-  padding: 25px 0;
-  background-color: #233140;
+  }
+  .footer-above {
+    padding-top: 50px;
+    background-color: #5c000e;
+  }
+  .footer-col {
+    margin-bottom: 50px;
+  }
+  .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+  }
+  .color{
+    a{
+      color: white;
+      &:hover{
+        color:red;
+      }
+    }
+  }
 }
