@@ -56,36 +56,41 @@
     <!-- end header -->
     <!-- start main -->
     <main class="container">
-        <div class="waze">
-            <iframe src="https://embed.waze.com/iframe?zoom=15&amp;lat=-34.631068&amp;lon=-58.643420" height="400"></iframe>
+        <div class="row">
+            <div class="col">
+                <div class="waze">
+                    <iframe src="https://embed.waze.com/iframe?zoom=15&amp;lat=-34.631068&amp;lon=-58.643420" height="400"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="form_contact">
-                <fieldset style="width: 400px;">
-                    <legend>Contactenos</legend>
-                    <form align="center" action="">
-                        <div>
-                            <input type="text" name="nombre" placeholder="Nombre" required></input>
-                        </div>
-                        <div>
-                            <input type="email" name="email" placeholder="Nombre@ejemplo.com" required></input>
-                        </div>
-                        <div>
-                            <label for="comentario"></label>
-                            <textarea name="comentario" id="" cols="30" rows="10" placeholder="Mensaje.." required></textarea>
-                        </div>
-                        <div>
-                            *Todos los datos son necesarios
-                        </div>
-                        <div>
-                            <input type="submit" value="Enviar datos">
-                        </div>
-                        <div>
-                            <input type="reset" value="Borrar datos">
-                        </div>
-                    </form>
+        <div class="row">
+            <div class="col">
+                    <fieldset style="width:400px;">
+                        <form align="center" action="">
+                            <h2>Contactenos</h2>
+                            <div>
+                                <input type="text" name="nombre" placeholder="Nombre" required></input>
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="Nombre@ejemplo.com" required></input>
+                            </div>
+                            <div>
+                                <label for="comentario"></label>
+                                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Mensaje.." required></textarea>
+                            </div>
+                            <div>
+                                <h6>*Todos los datos sonnecesarios</h6>
+                            </div>
+                            <div>
+                                <input type="button" value="Enviar" id="boton">
+                            </div>
+                            <div>
+                                <input type="reset" value="Borrar datos">
+                            </div>
+                        </form>
                 </fieldset>
+            </div>
         </div>
-
     </main>
     <!-- end main -->
     <!-- start footer -->

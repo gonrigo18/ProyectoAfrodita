@@ -1,0 +1,40 @@
+@media (max-width: 420px) {
+    .container .row .us .us_left h2{
+    font-size: 15px;
+    }
+    .container .row .us .us_left h4{
+        font-size: 10px;
+
+    }
+
+    .container .services .services_left h2{
+        font-size: 15px;
+    }
+    .container .services .services_left h4{
+        font-size: 10px;
+    }
+    .container .services .services_right .text_suites h4{
+        font-size: 12px;
+    }
+    .container .services .services_right .text_suites h5{
+        font-size: 10px;
+    }
+    .container .services .services_right .decoration h4{
+        font-size: 12px;
+    }
+    .container .services .services_right .decoration h5{
+        font-size: 10px;
+    }
+    .container .services .services_right .fooddrink h4{
+        font-size: 12px;
+    }
+    .container .services .services_right .fooddrink h5{
+        font-size: 10px;
+    }
+    .container .services .services_right .wifi h4{
+        font-size: 12px;
+    }
+    .container .services .services_right .wifi h5{
+        font-size: 10px;
+    }
+  }
