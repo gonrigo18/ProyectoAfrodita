@@ -14,6 +14,7 @@ body {
     .info-content{
         display: flex;
         flex-direction: column;
+        height: 65vh;
         color: white;
         text-align: center;
         align-content: center;
@@ -364,7 +365,17 @@ body {
             color: white;
         }
     }
+.contacto{
 
+    justify-content: center;
+    text-align: center;
+    h3{
+       color: white;
+    }
+    button{
+        margin-top: 7px;
+    }
+}
 
 
 

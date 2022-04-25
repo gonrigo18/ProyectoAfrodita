@@ -87,6 +87,7 @@ body {
 .container .info-content {
   display: flex;
   flex-direction: column;
+  height: 65vh;
   color: white;
   text-align: center;
   align-content: center;
@@ -377,6 +378,14 @@ body {
 
 .container fieldset h6 {
   color: white; }
+
+.container .contacto {
+  justify-content: center;
+  text-align: center; }
+  .container .contacto h3 {
+    color: white; }
+  .container .contacto button {
+    margin-top: 7px; }
 
 * {
   margin: 0;

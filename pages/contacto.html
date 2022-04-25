@@ -57,38 +57,20 @@
     <!-- start main -->
     <main class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="waze">
                     <iframe src="https://embed.waze.com/iframe?zoom=15&amp;lat=-34.631068&amp;lon=-58.643420" height="400"></iframe>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                    <fieldset style="width:400px;">
-                        <form align="center" action="">
-                            <h2>Contactenos</h2>
-                            <div>
-                                <input type="text" name="nombre" placeholder="Nombre" required></input>
-                            </div>
-                            <div>
-                                <input type="email" name="email" placeholder="Nombre@ejemplo.com" required></input>
-                            </div>
-                            <div>
-                                <label for="comentario"></label>
-                                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Mensaje.." required></textarea>
-                            </div>
-                            <div>
-                                <h6>*Todos los datos sonnecesarios</h6>
-                            </div>
-                            <div>
-                                <input type="button" value="Enviar" id="boton">
-                            </div>
-                            <div>
-                                <input type="reset" value="Borrar datos">
-                            </div>
-                        </form>
-                </fieldset>
+        <div class="row mt-5 g-3 contacto">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contacto">
+                <h3>Contactenos</h3>
+                <input type="text" class="form-control mt-3" placeholder="NombreFirst name" aria-label="Nombre">
+                <input type="text" class="form-control mt-3" placeholder="Apellido" aria-label="Apellido">
+                <input type="text" class="form-control mt-3" placeholder="Email" aria-label="Email">
+                <input type="text" class="form-control mt-3" placeholder="Escribe aqui..." aria-label="texto">
+                <button>Enviar</button>
             </div>
         </div>
     </main>
