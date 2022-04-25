@@ -38,6 +38,10 @@
     .container .services .services_right .wifi h5{
         font-size:80%;
     }
+    .container .description h4{
+        font-size:80%;
+    }
+
 }
 @media screen and (max-width:600px){
 	.us .us_left h2{
@@ -77,6 +81,9 @@
         font-size:80%;
     }
     .container .services .services_right .wifi h5{
+        font-size:80%;
+    }
+    .container .description h4{
         font-size:80%;
     }
 }

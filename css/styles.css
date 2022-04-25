@@ -87,7 +87,6 @@ body {
 .container .info-content {
   display: flex;
   flex-direction: column;
-  height: 65vh;
   color: white;
   text-align: center;
   align-content: center;
