@@ -90,18 +90,20 @@ body {
         height: 100%;
         align-items: center;
         text-align: center;
+        align-content: center;
 
         .services_left{
             display: block;
             flex-direction: column;
-            width: 40%;
-            line-height: 35px;
+            width: 30%;
+            line-height: 10px;
+    
         }
         .services_right{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 50%;
+            width: 60%;
             .text_suites{
                 h5{
                     font-size: 15px;
