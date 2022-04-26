@@ -11,6 +11,7 @@ body {
     gap: 10px;
     position: relative; }
 .container{
+    overflow: hidden;
     .info-content{
         display: flex;
         flex-direction: column;
@@ -20,6 +21,7 @@ body {
         align-content: center;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         .btn{
             font-weight: normal;
@@ -53,8 +55,6 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        width: 100%;
-        height: 100%;
         align-items: center;
         text-align: center;
         justify-content: center;
