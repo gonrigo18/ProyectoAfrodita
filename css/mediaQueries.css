@@ -86,6 +86,9 @@
     .container .description h4{
         font-size:80%;
     }
+    .container .text-center{
+        width: 80%;
+    }
 }
 @media screen and (max-width:768px){
 	.us .us_left h2{
