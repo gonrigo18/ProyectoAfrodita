@@ -135,6 +135,11 @@ body {
       flex-wrap: wrap;
       line-height: 10px;
       align-content: center; }
+      .container .us .us_left h2 {
+        padding: 10px; }
+      .container .us .us_left h5 {
+        margin-top: 15px;
+        line-height: 25px; }
       .container .us .us_left .btn {
         background-color: black;
         color: white; }

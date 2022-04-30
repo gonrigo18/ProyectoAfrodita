@@ -46,6 +46,7 @@ body {
             border-color: white;
             width: max-content;
             text-align: center;
+            
             &:hover{
             color: black;
             border-color: white;
@@ -65,6 +66,13 @@ body {
             flex-wrap: wrap;
             line-height: 10px;
             align-content: center;
+            h2{
+                padding: 10px;
+            }
+            h5{
+                margin-top: 15px;
+                line-height: 25px;
+            }
             .btn{
                 background-color: black;
                 color: white;
