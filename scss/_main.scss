@@ -16,6 +16,10 @@ body {
     background-size: cover;
     gap: 10px;
     position: relative; }
+    
+    %bordercolor{
+        border: 1px solid #5c000e;
+    }
 .container{
     overflow: hidden;
     .info-content{
@@ -42,11 +46,11 @@ body {
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
-            color: white;
-            border-color: white;
             width: max-content;
             text-align: center;
-            
+            color: white;
+            border-color: white;
+
             &:hover{
             color: black;
             border-color: white;
@@ -178,9 +182,9 @@ body {
         height: 300px;
         align-items: center;
         text-align: center;
-        border: solid 1px #5c000e;
+        @extend %bordercolor;
 
-        strong{
+        strong {
             color: red;
         }
         h4{
@@ -226,7 +230,7 @@ body {
         width: 50%;
         text-align: center;
         img{
-            border: solid 1px white;
+            @extend %bordercolor;
             width: 50%;
         }
     }
@@ -330,6 +334,7 @@ body {
         padding: 10px 20px;
         box-sizing: border-box;
         border-radius: 10px;
+        border: solid 1px white;
 
         h2{
             color: white;
@@ -389,6 +394,10 @@ body {
         background-color: #31384A;
         border: solid 1px white;
     }
+}
+
+.card{
+    @extend %bordercolor;
 }
 
 }

@@ -84,6 +84,9 @@ body {
   gap: 10px;
   position: relative; }
 
+.container .description, .container .descripcion_right img, .container .card {
+  border: 1px solid #5c000e; }
+
 .container {
   overflow: hidden; }
   .container .info-content {
@@ -112,10 +115,10 @@ body {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-      color: white;
-      border-color: white;
       width: max-content;
-      text-align: center; }
+      text-align: center;
+      color: white;
+      border-color: white; }
       .container .info-content .btn:hover {
         color: black;
         border-color: white;
@@ -220,8 +223,7 @@ body {
     width: max-content;
     height: 300px;
     align-items: center;
-    text-align: center;
-    border: solid 1px #5c000e; }
+    text-align: center; }
     .container .description strong {
       color: red; }
     .container .description h4 {
@@ -261,7 +263,6 @@ body {
     width: 50%;
     text-align: center; }
     .container .descripcion_right img {
-      border: solid 1px white;
       width: 50%; }
   .container .us_suites {
     color: white;
@@ -334,7 +335,8 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
     box-sizing: border-box;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border: solid 1px white; }
     .container form h2 {
       color: white;
       text-align: center;
