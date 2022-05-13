@@ -236,12 +236,16 @@ body {
     .us_suites{
         color: white;
         justify-content: center;
-        border: white 2px solid;
-        h1{
+        text-decoration: underline;
+        text-align: center;
+        .border{
             text-align: center;
-            margin-left: 25%;
-            margin-right: 25%;
-            padding: 10px;
+
+            h1{
+                border-color: white 1px solid;
+                text-align: center;
+                padding: 10px;
+            }
         }
 
     }

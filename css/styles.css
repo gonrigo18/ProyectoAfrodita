@@ -267,12 +267,14 @@ body {
   .container .us_suites {
     color: white;
     justify-content: center;
-    border: white 2px solid; }
-    .container .us_suites h1 {
-      text-align: center;
-      margin-left: 25%;
-      margin-right: 25%;
-      padding: 10px; }
+    text-decoration: underline;
+    text-align: center; }
+    .container .us_suites .border {
+      text-align: center; }
+      .container .us_suites .border h1 {
+        border-color: white 1px solid;
+        text-align: center;
+        padding: 10px; }
   .container .cards {
     margin-top: 50px; }
   .container .ushero h2 {
