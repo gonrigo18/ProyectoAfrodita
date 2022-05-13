@@ -377,6 +377,49 @@ body {
   .container .text-center .btn {
     background-color: #31384A;
     border: solid 1px white; }
+  .container .body {
+    background-color: transparent;
+    color: #fff;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center; }
+    .container .body .button {
+      font-weight: 300;
+      color: #fff;
+      font-size: 1.2em;
+      text-decoration: none;
+      border: 1px solid #efefef;
+      padding: .5em;
+      border-radius: 3px;
+      float: left;
+      margin: 6em 0 0 -155px;
+      left: 50%;
+      position: relative;
+      transition: all .3s linear;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      align-content: center; }
+      .container .body .button:hover {
+        background-color: transparent;
+        color: #fff; }
+    .container .body p {
+      font-size: 2em;
+      text-align: center;
+      font-weight: 100; }
+    .container .body h1 {
+      text-align: center;
+      font-size: 15em;
+      font-weight: 100; }
+    .container .body .icon-home {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      align-content: center; }
 
 * {
   margin: 0;

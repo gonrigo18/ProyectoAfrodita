@@ -16,7 +16,6 @@ body {
     background-size: cover;
     gap: 10px;
     position: relative; }
-    
     %bordercolor{
         border: 1px solid #5c000e;
     }
@@ -399,5 +398,52 @@ body {
 .card{
     @extend %bordercolor;
 }
+
+.body {
+    background-color: transparent;
+    color: #fff;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    @include Center-all();
+
+    .button {
+        font-weight: 300;
+        color: #fff;
+        font-size: 1.2em;
+        text-decoration: none;
+        border: 1px solid #efefef;
+        padding: .5em;
+        border-radius: 3px;
+        float: left;
+        margin: 6em 0 0 -155px;
+        left: 50%;
+        position: relative;
+        transition: all .3s linear;
+        @include Center-all();
+
+        &:hover{
+        background-color: transparent;
+        color: #fff;
+        }
+    }
+
+    p {
+        font-size: 2em;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 15em;
+        font-weight: 100;
+    }
+
+    .icon-home{
+        @include Center-all();
+    }
+}
+
 
 }
