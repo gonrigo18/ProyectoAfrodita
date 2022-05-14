@@ -1,45 +1,81 @@
 @media screen and (max-width:480px){
+    .us .us_right img{
+        display: none;
+    }
+    .us{
+        width: 100%;
+    }
+    .us .us_left{
+        margin-right: 40px;
+    }
 	.us .us_left h2{
 		font-size:80%;
 	}
-    .us .us_left h4{
+    .us .us_left h5{
 		font-size:80%;
 	}
     .us .us_left a{
 		font-size:80%;
 	}
+    .container .services .services_left{
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
     .container .services .services_left h2{
         font-size:80%;
     }
-    .container .services .services_left h4{
+    .container .services .services_left h6{
         font-size:80%;
     }
+    .container .services .services_right{
+        display: none;
+    }
     .container .services .services_right .text_suites h4{
+        display: none;
         font-size:80%;
     }
     .container .services .services_right .text_suites h5{
+        display: none;
         font-size:80%;
     }
     .container .services .services_right .decoration h4{
+        display: none;
         font-size:80%;
     }
     .container .services .services_right .decoration h5{
+        display: none;
         font-size:80%;
     }
     .container .services .services_right .fooddrink h4{
+        display: none;
         font-size:80%;
     }
     .container .services .services_right .fooddrink h5{
+        display: none;
         font-size:80%;
     }
     .container .services .services_right .wifi h4{
+        display: none;
         font-size:80%;
     }
     .container .services .services_right .wifi h5{
+        display: none;
         font-size:80%;
     }
     .container .description h4{
         font-size:80%;
+    }
+    .description{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .description .description_left{
+        margin-left: 90px;
+    }
+    .description .description_right img{
+        display: none;
     }
 
 }
