@@ -303,9 +303,8 @@ body {
     color: white;
     line-height: 30px; }
   .container .ushero .ushero_right {
-    animation-delay: 1s; }
-  .container .carro {
-    animation-delay: 1.5s; }
+    animation-delay: 1s;
+    padding: 20px; }
   .container .center {
     text-align: center;
     justify-content: center; }
@@ -331,8 +330,7 @@ body {
     width: 100%;
     padding: 20px;
     line-height: 50px;
-    color: white;
-    animation-delay: 2s; }
+    color: white; }
     .container .text_turns strong {
       text-decoration: underline; }
   .container h3 {
