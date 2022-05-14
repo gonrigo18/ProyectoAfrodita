@@ -57,6 +57,10 @@
       .info .icons .fa-brands:hover {
         color: red; }
 
+@media screen and (max-width: 480px) {
+  .info .contact {
+    display: none; } }
+
 /* SECTION NAVBAR */
 .navbar {
   display: flex;
@@ -84,7 +88,7 @@ body {
   gap: 10px;
   position: relative; }
 
-.container .description, .container .descripcion_right img, .container .card {
+.container .description, .container .description .descripcion_right img, .container .card {
   border: 1px solid #5c000e; }
 
 .container {
@@ -252,22 +256,21 @@ body {
         color: white;
         border-color: black;
         background-color: #5c000e; }
-  .container .description_left {
-    display: block;
-    flex-direction: column;
-    width: 50%;
-    line-height: 35px; }
-  .container .descripcion_right {
-    display: block;
-    flex-direction: column;
-    width: 50%;
-    text-align: center; }
-    .container .descripcion_right img {
-      width: 50%; }
+    .container .description .description_left {
+      display: block;
+      flex-direction: column;
+      width: 50%;
+      line-height: 35px; }
+    .container .description .descripcion_right {
+      display: block;
+      flex-direction: column;
+      width: 50%;
+      text-align: center; }
+      .container .description .descripcion_right img {
+        width: 50%; }
   .container .us_suites {
     color: white;
     justify-content: center;
-    text-decoration: underline;
     text-align: center; }
     .container .us_suites .border {
       text-align: center; }
@@ -276,12 +279,18 @@ body {
         text-align: center;
         padding: 10px; }
   .container .cards {
-    margin-top: 50px; }
+    margin-top: 30px; }
+    .container .cards .cardanimate {
+      animation-delay: 0.4s; }
   .container .ushero h2 {
     color: white; }
   .container .ushero h4 {
     color: white;
-    line-height: 40px; }
+    line-height: 30px; }
+  .container .ushero .ushero_right {
+    animation-delay: 1s; }
+  .container .carro {
+    animation-delay: 1.5s; }
   .container .center {
     text-align: center;
     justify-content: center; }
@@ -307,7 +316,8 @@ body {
     width: 100%;
     padding: 20px;
     line-height: 50px;
-    color: white; }
+    color: white;
+    animation-delay: 2s; }
     .container .text_turns strong {
       text-decoration: underline; }
   .container h3 {
