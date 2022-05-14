@@ -106,6 +106,10 @@
     .navbar-nav{
         display: flex;
         justify-content: end;
+        a{
+            position: relative;
+            margin: 10px;
+        }
     }
 
     .collapse {
@@ -116,6 +120,25 @@
                         color: red;
                     }
                 }
+            }
+        }
+    }
+    .navbar-nav {
+        li{
+            a::after{
+                content: "";
+                background-color: red;
+                margin-top: 10px;
+                height: 1px;
+                position: absolute;
+                left: 0;
+                top: 60%;
+                width: 100% ;
+                opacity: 0;
+            }
+            a:hover::after{
+                opacity: 1;
+                transition: opacity 0.5s;
             }
         }
     }

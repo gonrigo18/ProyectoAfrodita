@@ -72,8 +72,24 @@
   .navbar .navbar-nav {
     display: flex;
     justify-content: end; }
+    .navbar .navbar-nav a {
+      position: relative;
+      margin: 10px; }
   .navbar .collapse .navbar-nav li a:hover {
     color: red; }
+  .navbar .navbar-nav li a::after {
+    content: "";
+    background-color: red;
+    margin-top: 10px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+    opacity: 0; }
+  .navbar .navbar-nav li a:hover::after {
+    opacity: 1;
+    transition: opacity 0.5s; }
 
 * {
   margin: 0;
@@ -223,7 +239,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: max-content;
     height: 300px;
     align-items: center;
@@ -279,9 +295,8 @@ body {
         text-align: center;
         padding: 10px; }
   .container .cards {
-    margin-top: 30px; }
-    .container .cards .cardanimate {
-      animation-delay: 0.4s; }
+    margin-top: 30px;
+    animation-delay: 0.4s; }
   .container .ushero h2 {
     color: white; }
   .container .ushero h4 {
